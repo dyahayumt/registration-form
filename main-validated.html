@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <script>
+    function validasi() {
+    var nama = document.getElementById("nama").value;
+    var lahir = document.getElementById("lahir").value;
+    if (nama != "" && lahir !="") {
+        return true;
+    }else{
+        alert('Pastikan tidak ada field yang kosong');
+    }
+}
+</script>
+    
+	<title>Form Registrasi</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	
+	<style>
+		body {
+			font-family: 'Roboto Condensed', sans-serif;
+            background-color: #ff6666;
+			}
+		
+		.button {
+			background-color: #993366;
+			border: none;
+			color: white;
+			padding: 20px 20px;
+			}
+		
+		#regForm {
+			padding: 20px;
+			widht: 390px;
+            background-color: #ff6666;
+            border: solid 1px #alalal;
+            padding: 10px;
+		}
+		
+		#regForm label {
+			text-align: center;
+			padding-right:30px;
+			width: 80px;
+			display: inline-block;
+			margin-bottom: 20px;
+            width:80px;
+		}
+		
+			#regForm input[type="text"], #regForm textarea {
+			width: 400px; height : 20px;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>Form Registrasi</h1>
+		<div id="regForm">
+        <form id="formregist" method="action" mailto="registration@email.com" onsubmit="validasi()" method="post">
+		
+        <form action="#">
+	
+		<label>Nama</label><input type="text" name=nama 				id="nama" size="30" maxlength="30"><br>
+    	<label>Jenis Kelamin</label><input type=radio size="25" 				name=sex value=Laki-laki>Laki-laki<input 					type=radio name=sex 					  					value=Perempuan>Perempuan</br>
+    	<label>Tanggal Lahir</label><input type="text" 						id="lahir" size="30" maxlength="20"><br>
+    	<label>Alamat</label><textarea cols="30" rows="3" 					id="alamat"></textarea><br>
+    	<div id="tombol">
+   		<input class="button" type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html> 
