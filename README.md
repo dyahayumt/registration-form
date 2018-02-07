@@ -1,1 +1,1 @@
-# registration-form
+Example code to make registration form.
